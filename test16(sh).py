@@ -101,13 +101,11 @@ class RetrieverWrapper:
         self.retriever = retriever
 
     def invoke(self, inputs):
-        # 0단계 : query의 타입에 따른 전처리
-        if isinstance(inputs, dict): # inputs가 딕셔너리 타입일경우, question 키의 값을 검색 쿼리로 사용
+        if isinstance(inputs, dict): 
             query = inputs.get("question", "")
-        else: # 질문이 문자열로 주어지면, 그대로 검색 쿼리로 사용
+        else: 
             query = inputs
-        # 1단계 : query를 리트리버에 넣어주고, response_docs를 얻어모
-        response_docs = self.retriever.get_relevant_documents(query) # 검색을 수행하고 검색 결과를 response_docs에 저장
+        response_docs = self.retriever.get_relevant_documents(query)
         return response_docs
 
 # RAG 체인 설정
