@@ -62,7 +62,7 @@
 AI 챗봇을 통해 사용자는 자연어로 질문을 하거나 명확한 추천 장소를 검색할 수 있어야 하므로, 자연어 처리(NLP) 성능이 중요한 요소입니다. 이를 위해 최신의 AI 챗봇 엔진을 선택해야 하기에 OPENAI의 GPT 모델을 선택하게 되었습니다. 또한, 검색 시스템은 문화재와 관련된 명소 정보 연결하는 역할을 해야 하므로, 외부 API 또는 데이터베이스와의 통합이 필요합니다.
 
 <details>
-<summary>텍스트 유사도 비교 방식 선정 과정</summary>
+<summary><strong>텍스트 유사도 비교 방식 선정 과정</strong></summary>
 
 
 #### 텍스트 유사도 비교 방식 선택
@@ -92,7 +92,7 @@ OpenAiEmbeddings은 강력하게 언어모델과 상호작용하여 텍스트 �
 ## **6. 트러블 슈팅**
 
 <details>
-<summary>크롤링 과정의 주요 이슈 및 해결 방안</summary>
+<summary><strong>크롤링 과정의 주요 이슈 및 해결 방안</strong></summary>
 
 ### 문제 원인
 1. **문화재 위키백과 사이트 개편**: 갑작스러운 사이트 개편으로 인해 기존 크롤링 방식이 무효화되었습니다.
@@ -111,7 +111,7 @@ OpenAiEmbeddings은 강력하게 언어모델과 상호작용하여 텍스트 �
 </details>
 
 <details>
-<summary>데이터 전처리 과정의 주요 사항</summary>
+<summary><strong>데이터 전처리 과정의 주요 사항</strong></summary>
 
 
 
@@ -138,7 +138,7 @@ OpenAiEmbeddings은 강력하게 언어모델과 상호작용하여 텍스트 �
 </details>
 
 <details>
-<summary>LLM 모델링 과정의 주요 사항</summary>
+<summary><strong>LLM 모델링 과정의 주요 사항</strong></summary>
 
 ### 모델 구현
 - **김동찬님**은 문자열 간의 유사도를 비교하고 텍스트 매칭을 수행하는 **fuzzywuzzy** 라이브러리를 활용하여:
@@ -156,7 +156,7 @@ OpenAiEmbeddings은 강력하게 언어모델과 상호작용하여 텍스트 �
 </details>
 
 <details>
-<summary>Streamlit UI 제작 과정의 주요 사항</summary>
+<summary><strong>Streamlit UI 제작 과정의 주요 사항</strong></summary>
 
 ### 오류 상황
 - Streamlit UI 제작 과정 중 버전에 따라 오류가 발생하는 경우가 있었지만, 그 외에는 큰 문제는 없었습니다.
